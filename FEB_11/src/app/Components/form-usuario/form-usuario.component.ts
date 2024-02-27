@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
-import { NoWhitespaceValidator } from '../validators/noWhiteSpace.validator'
-import { PasswordValidator } from '../validators/password.validator';
-import { FullNameValidator } from '../validators/full-name.validator';
-import { PhoneValidator } from '../validators/phone.validator';
-import { MinAgeValidator } from '../validators/min-age.validator';
-import { CepValidator } from '../validators/cep-validator';
+import { NoWhitespaceValidator } from '../../Validators/no_white_space.validator';
+import { PasswordValidator } from '../../Validators/password.validator';
+import { FullNameValidator } from '../../Validators/full_name.validator';
+import { PhoneValidator } from '../../Validators/phone.validator';
+import { MinAgeValidator } from '../../Validators/min_age.validator';
+import { CepValidator } from '../../Validators/cep.validator';
 
 @Component({
   selector: 'app-form-usuario',
