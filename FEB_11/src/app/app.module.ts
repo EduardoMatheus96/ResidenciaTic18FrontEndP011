@@ -3,16 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+import { FormUsuarioComponent } from './Components/form-usuario/form-usuario.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormUsuarioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxMaskDirective
   ],
-  providers: [],
+  providers: [provideNgxMask({})],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
